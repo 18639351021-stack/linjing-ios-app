@@ -1040,6 +1040,7 @@ function AssistantPanel() {
 
   const category = categories.find(item => item.id === categoryId) || categories[0];
   const tool = category.tools.find(item => item.id === toolId) || category.tools[0];
+  const selectedToolIndex = Math.max(0, category.tools.findIndex(item => item.id === tool?.id));
 
   useEffect(() => {
     if (!category.tools.some(item => item.id === toolId)) {
@@ -1061,6 +1062,35 @@ function AssistantPanel() {
           {category.tools.map(item => <option key={item.id} value={item.id}>{item.title}</option>)}
         </select>
       </div>
+      <div className="assistant-category-list">
+        {categories.map(item => (
+          <button
+            type="button"
+            className={`assistant-select-card ${item.id === category.id ? 'active' : ''}`}
+            key={item.id}
+            onClick={() => {
+              setCategoryId(item.id);
+              setToolId(item.tools[0]?.id || '');
+            }}
+          >
+            <span>{item.title}</span>
+            <small>{item.tools.length} 项</small>
+          </button>
+        ))}
+      </div>
+      <div className="assistant-tool-list">
+        {category.tools.map((item, index) => (
+          <button
+            type="button"
+            className={`assistant-tool-card ${item.id === tool?.id ? 'active' : ''}`}
+            key={item.id}
+            onClick={() => setToolId(item.id)}
+          >
+            <span>{item.title}</span>
+            <small>{item.calculatorId ? category.title : `${category.title} · ${index + 1}`}</small>
+          </button>
+        ))}
+      </div>
       <div className="row-actions">
         <button onClick={() => setFullscreen(value => !value)}>{fullscreen ? '退出全屏' : '全屏显示'}</button>
         <button onClick={() => tool?.path && window.open(tool.path, '_blank')} disabled={!tool?.path}>单独打开</button>
@@ -1069,7 +1099,10 @@ function AssistantPanel() {
       {tool?.calculatorId ? (
         <SingleCoordinateCalculatorPanel calculatorId={tool.calculatorId} />
       ) : tool?.path ? (
-        <iframe className="assistant-frame" title={tool.title} src={tool.path} />
+        <div className="assistant-calculator">
+          <div className="sheet-header compact"><strong>{tool.title}</strong><span>{category.title} · {selectedToolIndex + 1}</span></div>
+          <iframe className="assistant-frame" title={tool.title} src={tool.path} />
+        </div>
       ) : (
         <div className="empty-state compact">请选择助手工具</div>
       )}
