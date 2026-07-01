@@ -1,0 +1,131 @@
+﻿         <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>钻井液雷诺系数（Re）计算</title>
+
+
+
+ <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+     <h3  align="center">钻井液雷诺系数（Re）计算</h3> <hr class="hr0"> <form name="form1">
+
+
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"   VALUE="216"  name="G7"  autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 钻柱外径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"   VALUE="127"  name="G8" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 排量(l/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"   VALUE="30"  name="G9"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 井深(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1400"  name="G10"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度 (g/cm<sup>3</sup>)
+:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1.0"  name="G11"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+   Φ600:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="66"  name="G12"  id="shuru"  data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ300:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="55"  name="G13"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+  
+     <H4   align="center">计        算         结        果</H4>    <hr class="hr0">
+  
+      
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(in):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M7" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >      
+      
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻柱外径(in):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M9" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >   
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流性指数(n值):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M11" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >      
+      
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液上返速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M13" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >  
+   
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+宾汉雷诺数（Re）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M16" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >      
+      
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流态:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="M17" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >       
+
+     
+
+    
+    雷诺系数简称雷诺数，又称雷诺准数，用Re或Nre表示，是用来比较流体流动状态的一个无因次准数，来源于流体力学，最先由英国人雷诺(O.Reynolds)提出。雷诺数为流体惰性力和粘滞力之比。在几何形状相似的流动系统中，只要雷诺数相同流体的流体就相似。
+
+        <HR> 
+			
+</form>  
+    
+	</div>
+
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="leinuo61()"  id="B4" >
+</li>				
+</ul>
+	</div>
+</div>
+</div></body></html>

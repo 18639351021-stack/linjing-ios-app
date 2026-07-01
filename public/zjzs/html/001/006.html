@@ -1,0 +1,92 @@
+﻿   <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>迟到时间计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+
+    <h3  align="center">迟到时间法计算</h3> <hr class="hr0">
+     <form name="form1">
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头所在深度(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="2000"    name="N7" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+油气层所在深度(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="2000"  name="N8" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" data-clear-btn="true"   >
+钻头处的迟到时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="32"   name="N9"data-clear-btn="true"   ><br>
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+开泵至见油气时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input  type="number"   VALUE="20"  name="N10" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+静止时间(h):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="20"  name="N11"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    
+
+    <h4  align="center"> 计算结果</h4> <hr class="hr0">
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+油气上窜速度(m/h):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="cdsj2"    id="cdsj2"  style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+上窜的高度（m）：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"      id="N12"  style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+油气到达的井深（m）：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"      id="C4"  style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   说明：</p>本计算结果仅供参考，请按相关标准执行。
+	
+</form>
+</div>
+
+
+     
+	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B1"   onClick="cdsj()"  id="B2">
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

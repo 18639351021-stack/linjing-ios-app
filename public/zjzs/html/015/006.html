@@ -1,0 +1,95 @@
+﻿         <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>单弯双稳螺杆造斜率的计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+<h3  align="center">单弯双稳螺杆造斜率的计算</h3> <hr class="hr0"> 
+<form name="form1">
+<div  data-role="navbar" >
+		 <img src="../image/zxl.png"  class="kmimg"   align="center">  
+			</div>
+<hr style="width:100%;" >
+
+
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+螺杆弯度γ（°）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="1.25"    name="E16" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:60%;"  id="q2" >
+L1长（m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="0.5"  name="E17" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:60%;"  id="q2" >
+L2长（m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="0.8"    name="E18"  data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:60%;"  id="q2" >
+L3长（m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="7.3"  name="E20" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+井眼直径（mm）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="215.9"  name="E21"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+下稳定器直径（mm）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="213"  name="E22" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+<div class="ui-block-a"  style="width:60%;"  id="q2" >
+上稳定器直径（mm）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="200"  name="E23"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ <div class="ui-block-a"  style="width:60%;"  id="q2" >
+修正系数:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="0.54"  name="E27" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+理论造斜率（°/30m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="E26" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+实际造斜率（°/30m）
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"      id="E28" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+ 
+</form>
+
+说明：1、本计算仅供参考，一切以现场为准。</p>
+2、图片来源中国钻井QQ群：9270878</p>
+   3、 式中：L1为钻头到下稳定器的长度，m；L2为下稳定器到弯曲点的长度，m；L3为弯曲点到其上第一个切点或上稳定器的距离,m；γ为螺杆的弯曲角度。  </p>
+   4、 该方法虽然没有涵盖地层特性、已钻轨迹、钻进参数等因素对造斜率的影响，但具有计算简单的优点，突出了钻具组合对造斜效果起的主导作用，直观反映了钻具结构参数对造斜的贡献。</p>
+</div>
+
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+	<div  data-role="navbar" >
+		<ul>
+		<li><input type="button" value="计算"     onClick="JS124()"   > 
+		</li>
+		</ul>
+			</div>
+		</div>
+</div></body></html>

@@ -1,0 +1,125 @@
+﻿             <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>钻井液加重计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+     <h3  align="center">   钻井液加重计算</h3><hr   class="hr0">
+    <form name="form1">
+    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 加重前体积(m<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="80"    name="G5"  autofocus="autofocus" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >      
+    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 	加重前密度(g/cm<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="1.2"  name="G6"data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >      
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 加重后密度(g/cm<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number" VALUE="1.3"   name="G7"data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >         
+    
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 加重剂密度(g/cm<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input  type="number"   VALUE="4.2"  name="G8"data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >      
+    
+   <h4  align="center"> 计算结果</h4> <hr class="hr0">  
+    
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 	所需加重材料质量(t):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="text"  name="zjymd2"    id="zjymd2" style="color:#6699ee"  >
+
+            </div>   <hr   style="width:100%;" >  
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 	加重后钻井液总体积(m<sup>3</sup>):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="text"  name="zjymd3"    id="zjymd3" style="color:#6699ee"  >
+
+            </div>   <hr   style="width:100%;" > 
+            
+ 
+
+   重晶石
+4.2
+青石粉
+2.7
+钛铁矿
+4.6
+磁铁矿
+4.9～5.9
+钒钛铁矿
+5.8
+方铅矿
+7.5～7.6
+粘土
+2.4
+氧化铁矿粉
+4.5
+
+
+氯化钠
+2.17
+甲酸铯
+2.3
+甲酸甲
+1.91
+氯化钙
+2.15
+
+
+	
+</form>  	</div>
+
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B4"   onClick="zjymd()"  id="B4" >
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+
+</div></body></html>

@@ -1,0 +1,412 @@
+﻿                         <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>循环压耗计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;align:center }</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+        
+      <h3  align="center">循环压耗计算</h3> <hr class="hr0">
+       <form name="form1">
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量（L/s） :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="14"    name="B5" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度（g/cm<sup>3</sup >）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="1.31"    name="C5" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+     
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+旋转粘度（Φ300）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="29"    name="E5" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+旋转粘度（Φ600）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="52"    name="F5" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+    
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="114.3"    name="B9" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="92.3"    name="C9" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="3256.96"    name="E9" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1节箍外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="139.7"    name="B10" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1节箍内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="61.9"    name="C10" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1节箍长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="0.39"    name="D10" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1节箍累长（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="138.84"    name="E10" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1处井径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="168.3"    name="F9" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+ 
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="101.6"    name="B11" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="82.3"    name="C11" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="4786.94"    name="E11" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2节箍外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="127"    name="B12" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2节箍内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="65"    name="C12" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2节箍长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="0.36"    name="D12" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2节箍累长（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="189.36"    name="E12" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2处井径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="168.3"    name="F12" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+ 
+ 
+     
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="101.6"    name="B13" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="82.3"    name="C13" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="378.18"    name="E13" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆节箍外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="127"    name="B14" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆节箍内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="61.9"    name="C14" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆节箍长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="0.8"    name="D14" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆箍累长（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="138.84"    name="E14" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >  
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆处井径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="165.1"    name="F14" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+ 
+ 
+ 
+  
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="120"    name="B15" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="57"    name="C15" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="9.22"    name="E15" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤处井径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="165.1"    name="F15" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地面管汇内径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="103"    name="C17" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地面管汇长度（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="80"    name="E17" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >	
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头水眼压降（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="1.5"    name="I16" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >	
+ 
+ 
+ 
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">      
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+塑性粘度（Pa·S）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="NUMBER"     id="G5" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G9" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H9" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I9" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J9" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    
+    
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1接箍水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G10" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1接箍环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H10" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1接箍内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I10" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆1接箍环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J10" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >   
+ 
+ 
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 钻杆2水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G11" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H11" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I11" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J11" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2接箍水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G12" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2接箍环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H12" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2接箍内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I12" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆2接箍环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J12" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >   
+ 
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 加重钻杆水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G13" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H13" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I13" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J13" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆接箍水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G14" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆接箍环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H14" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆接箍内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I14" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重钻杆接箍环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J14" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >   
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 钻铤水眼流速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="G15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤环空返速（m/s）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤内压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具内总压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I18" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空总压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="J18" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+总压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="I19" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+	
+    
+ 说明：</p>本计算结果仅供参考，请按相关标准执行。 
+ </P>1、钻杆长度和节箍长度分开计算。
+ </p> 2、钻头水眼压降需要单独计算。
+
+</form>
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="A4"   onClick="JS148()"  id="B3" > 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

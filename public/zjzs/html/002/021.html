@@ -1,0 +1,87 @@
+﻿ <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>补充氯离子钻井液加盐计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+<H4   align="center">补充cl<sup>-</sup >钻井液加盐计算</H4>    <hr class="hr0"> 
+<form name="form1">
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液总量(m<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="130"  name="H6" autofocus="autofocus" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+转化前固相体积(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="18"  name="H7"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+转化前固相含量(g/L):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="500"  name="H8"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >   
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+转化前油含量 (%)
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="3"  name="H9"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+转化前cl<sup>-</sup >含量 (%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="0"  name="H10"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" > 
+
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+要求cl<sup>-</sup >含量:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="189000"  name="H11"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >  
+
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+油的密度（g/cm<sup>3</sup >）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="0.85"  name="H12"  id="shuru" data-clear-btn="true"   >
+</div> <hr style="width:100%;" >  
+
+<h4  align="center"> 计算结果</h4> <hr class="hr0">  
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+水的含量（m<sup>3</sup >）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H16" style="color:#6699ee"   class="shuchu"  >
+</div> <hr style="width:100%;" >  
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+估算转化前密度(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H17" style="color:#6699ee"   class="shuchu"  >
+</div> <hr style="width:100%;" >      
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+估算转化后密度(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H19" style="color:#6699ee"   class="shuchu"  >
+</div> <hr style="width:100%;" > 
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+所需NaCl(t):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"     id="H27" style="color:#6699ee"   class="shuchu"  >
+</div> <hr style="width:100%;" >   
+</form>  
+</div>
+<div data-role="footer" data-position="fixed"   id="glideDiv0">	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="JS129()"  id="B4" >
+</li>
+</ul>
+</div>	</div>
+</div></body></html>

@@ -1,0 +1,111 @@
+﻿       <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>卡点计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style> 
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+    <h3  align="center">卡点计算</h3> <hr class="hr0"> 
+    <form name="form1">
+
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  第一次提升拉力(t):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+
+             <input type="number"  VALUE="5"    name="H4" autofocus="autofocus" data-clear-btn="true"   >
+            </div> <hr style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+第二次提升拉力(t):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="10"  name="H5" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" ><div class="ui-block-a"  style="width:62%;"  id="q2" >
+第三次提升拉力(t):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="15"   name="H6" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+第一次提升伸长(cm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="5"   name="H7" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+第二次提升伸长(cm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="10"   name="H8" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  第三次提升伸长(cm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="15"   name="H9" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ K系数:
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number" VALUE="7146.3"   name="H10" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆外径(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="127"   name="H11" data-clear-btn="true"   >
+
+            </div> <hr style="width:100%;" > <h4  align="center"> 计算结果</h4> <hr class="hr0"> <div class="ui-block-a"  style="width:62%;"  id="q2" >
+   平均拉力(t):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+
+<input type="text"  name="pjll"  id="pjll" style="color:#6699ee"  >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  平均伸长(cm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+
+<input type="text"  name="pjsc"  id="pjsc" style="color:#6699ee"  >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 卡点深度(m):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+ 
+<input type="text"  name="qdsd"  id="qdsd" style="color:#6699ee"  >
+
+            </div> <hr  style="width:100%;" >
+         说明：</p>本计算结果仅供参考，请按相关标准执行。</p>    
+            
+             5“钻杆壁厚9.19 mm    K值7146.3<p>
+    5 1/2“钻杆壁厚10.54 mm    K值8981.7<p>
+    31/2“钻杆壁厚9.35 mm    K值4905.6<p>      
+
+   *本计算公式中，单位吨，已经换算成KN<p>
+    *拉力为提升拉力与卡钻前悬重之差<p>     
+                
+                
+ 
+        
+
+
+</form>  
+       </div>
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B4"   onClick="qiadian()"  id="B4" > 
+					</li>
+					
+				</ul>
+			</div>
+	
+
+
+
+
+	</div>
+</div></body></html>
+      	</div>

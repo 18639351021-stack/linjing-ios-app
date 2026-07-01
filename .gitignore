@@ -1,0 +1,12 @@
+/node_modules/
+/dist/
+/ios/
+/artifacts/
+/ios-derived-data/
+/unsigned-ipa/
+.DS_Store
+*.log
+*.ipa
+*.xls
+*.xlsx
+*.xlsm

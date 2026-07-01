@@ -1,0 +1,87 @@
+﻿                                 <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>功率转换</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_power1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+           <h3  align="center">功率转换</h3> <hr class="hr0"> 
+
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+<p>	<label for="valuefrompower1">从:</label>
+<input type="number" name="valuefrompower1" id="valuefrompower1" value="1" onkeyup="cc_power1();" >    </p>
+
+
+
+<select name="selectfrompower1" id="selectfrompower1"  onchange="cc_power1();" >
+
+<option value="0" selected>瓦特(watt)[W]</option><option value="1" >千兆瓦特(gigawatt)[GW]</option><option value="2" >兆瓦特(megawatt)[MW]</option><option value="3" >千瓦特(kilowatt)[kW]</option><option value="4" >焦耳/小時(joule/hour)</option><option value="5" >焦耳/分钟(joule/minute)</option><option value="6" >焦耳/秒(joule/second)</option><option value="7" >卡calorie(th)/小時</option><option value="8" >卡calorie(th)/分钟</option><option value="9" >卡calorie(th)/秒</option><option value="10" >千卡(th)/小時</option><option value="11" >千卡(th)/分钟</option><option value="12" >公斤米kilogram meter/小時</option><option value="13" >公斤米kilogram meter/分钟</option><option value="14" >英呎磅力/分钟</option><option value="15" >英呎磅力/秒</option><option value="16" >马力horsepower(电)</option><option value="17" >马力horsepower(国际)</option><option value="18" >马力horsepower(水)</option><option value="19" >马力horsepower(公制)</option><option value="20" >Btu/小时(Btu/hour)英</option><option value="21" >Btu/分钟(Btu/minute)英</option><option value="22" >Btu/秒(Btu/second)英</option>
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+
+	<label for="valuetopower1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+
+<input type="text" name="valuetopower1" id="valuetopower1" value="1" onkeyup="ccb_power1();" >
+
+
+
+<select name="selecttopower1" id="selecttopower1"  onchange="cc_power1();" >
+
+<option value="0" selected>瓦特(watt)[W]</option><option value="1" >千兆瓦特(gigawatt)[GW]</option><option value="2" >兆瓦特(megawatt)[MW]</option><option value="3" >千瓦特(kilowatt)[kW]</option><option value="4" >焦耳/小時(joule/hour)</option><option value="5" >焦耳/分钟(joule/minute)</option><option value="6" >焦耳/秒(joule/second)</option><option value="7" >卡calorie(th)/小時</option><option value="8" >卡calorie(th)/分钟</option><option value="9" >卡calorie(th)/秒</option><option value="10" >千卡(th)/小時</option><option value="11" >千卡(th)/分钟</option><option value="12" >公斤米kilogram meter/小時</option><option value="13" >公斤米kilogram meter/分钟</option><option value="14" >英呎磅力/分钟</option><option value="15" >英呎磅力/秒</option><option value="16" >马力horsepower(电)</option><option value="17" >马力horsepower(国际)</option><option value="18" >马力horsepower(水)</option><option value="19" >马力horsepower(公制)</option><option value="20" >Btu/小时(Btu/hour)英</option><option value="21" >Btu/分钟(Btu/minute)英</option><option value="22" >Btu/秒(Btu/second)英</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+
+		
+
+
+
+		结果:<br>
+
+		<input type=text name="valueresultpower1" id="valueresultpower1" >
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

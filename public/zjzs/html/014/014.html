@@ -1,0 +1,110 @@
+﻿         <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>查询</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script>
+// 定义 phoneticLookup
+function phoneticLookup(val) {
+  // 请只修改这条注释以下的代码
+  val = form1.lookup.value; 
+  var lookup = {
+'66.3':"2A31×2A30",
+'72.6':"2A11×2A10",
+'75.8':"231×230",
+'85.7':"211×210",
+'88.5':"331×330",
+'92.5':"221×220",
+'100.8':"321×320",
+'101.6':"311×310",
+'117.1':"431×430",
+'121.8':"421×420",
+'122.6':"4A11×4A10",
+'132.9':"411×410",
+'139.7':"531×530",
+'148.5':"521×520",
+'152':"631×630",
+'171.8':"621×620",
+'178.2':"731×730",
+'202.4':"831×830",
+ 
+  };
+   
+  result = lookup[val];
+  document.getElementById("demo").innerHTML=result;
+ 
+
+ // alert(result);
+}
+ 
+// 你可以修改这一行来测试你的代码
+
+</script>
+
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+  <H4   align="center">已知公扣大小查扣型 </H4>    <hr class="hr0"> 
+<form name="form1"      >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+公端小径(mm)
+</div> <div class="ui-block-b"  style="width:35%;"   >
+
+<select   type="text"    name="lookup" list="browsers"   oninput="phoneticLookup()" >
+  <option value="66.3">  66.3  </option >
+  <option value="72.6">  72.6  </option >
+  <option value="75.8">   75.8 </option >
+  <option value="85.7">    85.7  </option >
+  <option value="88.5">    88.5 </option >
+  <option value="92.5">    92.5 </option >
+  <option value="100.8">    100.8 </option >
+  <option value="101.6">    101.6  </option >
+  <option value="117.1">    117.1 </option >
+  <option value="121.8">    121.8  </option >
+    <option value="122.6">  122.6 </option >
+  <option value="132.9">     132.9 </option >
+  <option value="139.7">    139.7  </option >
+  <option value="148.5">    148.5  </option >
+  <option value="152">      152 </option >
+  <option value="171.8">    171.8 </option >
+  <option value="178.2">    178.2  </option >
+  <option value="202.4">     202.4  </option >
+</select >
+ 
+ 
+ </div> <hr style="width:100%;" >
+
+ <h4  align="center"> 计算结果</h4> <hr class="hr0">  
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+扣型为:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<p id="demo"></p>
+ </div>  
+ 
+</form>  
+     <hr style="width:100%;" >   
+
+
+	</div>
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="查询"  onclick="phoneticLookup()"   id="B4" >
+</li>
+					
+</ul>
+	</div>	</div>
+
+
+
+</div></body></html>

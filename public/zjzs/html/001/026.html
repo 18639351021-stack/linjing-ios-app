@@ -1,0 +1,91 @@
+﻿                                                        <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>地层破裂压力试验</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+      <h3  align="center">地层破裂压力</h3> <hr class="hr0"> <form name="form1">
+
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地破时钻井液密度(g/cm<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="1.45"    name="C3" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+垂直井深（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="2000"    name="C4" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+破裂时立压（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="10"    name="C5" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+当前钻井液密度(g/cm<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="0"    name="C6" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+ 
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地层破裂压力（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="A4"    id="A4" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+ 
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地层破裂压力梯度（MPa/m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="A7"    id="A7" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+当量钻井液密度(g/cm<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="A5"    id="A5" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    
+   
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+关井允许套压（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="A6"    id="A6" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   说明： 破裂时立压为实测数据，并非计算所得。 </p>
+   当前密度为0时，就是当前空井时井最大套压，但不是最大允许关井套压。 </p>
+  套管抗内压强度的80%、井口装置额定压力和地层破裂压力所允许关井套压三者中的最小值作为最大允许关井套压。
+ <hr style="width:100%;" >
+</form>
+
+
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="A4"   onClick="dp85()"  id="B3" > 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

@@ -1,0 +1,94 @@
+﻿        <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>质量转换</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_Weight_Mass1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+          <h3  align="center">质量转换</h3> <hr class="hr0"> 
+  
+
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+	<label for="valuefromWeight_Mass1">从:</label>
+
+
+
+<!--unit begin-->
+
+
+
+<input type="number"  name="valuefromWeight_Mass1" id="valuefromWeight_Mass1" value="1" onkeyup="cc_Weight_Mass1();" >
+
+
+
+<select name="selectfromWeight_Mass1" id="selectfromWeight_Mass1" onchange="cc_Weight_Mass1();" >
+
+<option value="0" selected>公斤(kilogram) [kg]</option><option value="1" >公吨(tonne) [t]</option><option value="2" >克(gram) [g]</option><option value="3" >克拉 [car,ct]</option><option value="4" >英镑(pound,US,UK)[lb,lbs]</option><option value="5" >金衡英镑(troy ounce)</option><option value="6" >盎司(ounce) [oz]</option><option value="7" >金衡盎司(troy ounce)</option><option value="8" >长吨 (英吨,ton)</option><option value="9" >短吨 (美吨,ton)</option><option value="10" >grain</option><option value="11" >cental</option><option value="12" >美担(hundredweight,US)</option><option value="13" >英担(hundredweight,UK)</option><option value="14" >slug (g-pound)</option><option value="15" >英石(stone)</option><option value="16" >地球质量</option><option value="17" >太阳质量</option>
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+
+<label for="valuetoWeight_Mass1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+<input type="text"  name="valuetoWeight_Mass1" id="valuetoWeight_Mass1" value="1" onkeyup="ccb_Weight_Mass1();" >
+
+
+
+<select name="selecttoWeight_Mass1" id="selecttoWeight_Mass1"  onchange="cc_Weight_Mass1();" >
+
+<option value="0" selected>公斤(kilogram) [kg]</option><option value="1" >公吨(tonne) [t]</option><option value="2" >克(gram) [g]</option><option value="3" >克拉 [car,ct]</option><option value="4" >英镑(pound,US,UK)[lb,lbs]</option><option value="5" >金衡英镑(troy ounce)</option><option value="6" >盎司(ounce) [oz]</option><option value="7" >金衡盎司(troy ounce)</option><option value="8" >长吨 (英吨,ton)</option><option value="9" >短吨 (美吨,ton)</option><option value="10" >grain</option><option value="11" >cental</option><option value="12" >美担(hundredweight,US)</option><option value="13" >英担(hundredweight,UK)</option><option value="14" >slug (g-pound)</option><option value="15" >英石(stone)</option><option value="16" >地球质量</option><option value="17" >太阳质量</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+
+		
+
+	
+
+		结果:<br>
+
+		<input type=text name="valueresultWeight_Mass1" id="valueresultWeight_Mass1" >
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

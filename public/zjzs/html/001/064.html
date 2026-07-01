@@ -1,0 +1,73 @@
+﻿  <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>ECD模拟计算及曲线</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+ <script type="text/javascript" src="../js/app.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;align:center }</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+        
+      <h3  align="center">ECD模拟计算及曲线</h3> <hr class="hr0">
+       <form name="form1">
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度（g/cm³） :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   id="mudDensity" step="0.1" value="1.35" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空压耗（MPa）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" id="annulusLoss" step="0.1" value="3.5"  data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+     
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井深范围（m）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number" id="minDepth" placeholder="最小井深" value="1000">
+ <input type="number" id="maxDepth" placeholder="最大井深" value="7000">
+ </div> <hr style="width:100%;" > 
+  
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">      
+<hr style="width:100%;" >
+ 
+  <div id="result" style="margin:15px 0; font-weight:bold;"></div>
+        
+        <!-- 图表容器 -->
+        <div id="chartContainer">
+            <canvas id="ecdChart"></canvas>
+        </div>
+   </form>       
+    
+   
+
+                
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li> 
+				        <button onclick="calculateECD()">计算并生成曲线</button>
+                                
+                                	</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

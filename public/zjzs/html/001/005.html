@@ -1,0 +1,118 @@
+﻿             <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>喷嘴直径计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;align:center }</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+      <h3  align="center">喷嘴直径计算</h3> <hr class="hr0">
+       <form name="form1">
+       
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头直径 (mm) :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="215.9"    name="B0" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+设计喷嘴压降 (MPa) :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="6"    name="B1" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度(g/cm<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="1.20"    name="B2" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量（L/s） :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="35"    name="B3" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴个数 :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="5"    name="B4" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流量系数(常用0.95-0.985):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="0.985"    name="B5" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">      
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B7" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" >
+ 
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴当量直径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B12" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" > 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴水功率（kW）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B9" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" >
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷射速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B10" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" > 
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+射流冲击力(N):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B11" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" > 
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+比水功率(w):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+   <input type="text"     id="B14" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" > 
+
+    <div class="ui-block-a"  style="width:32%;"  id="q2" >
+结论:
+</div> <div class="ui-block-b"  style="width:67%;"   >
+   <input type="text"     id="B8" style="color:#6699ee"  >    
+   
+ </div> <hr style="width:100%;" >
+说明：本算法为等径算法,并不代表最优组合。</p>
+计算公式参考《钻井工具手册》，杜晓瑞，石油工业出版社
+</form>
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="A4"   onClick="JS122()"  id="B3" > 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

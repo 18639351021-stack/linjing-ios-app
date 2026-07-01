@@ -1,0 +1,76 @@
+﻿            <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>能量转换</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_energy1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+         <h3  align="center">能量转换</h3> <hr class="hr0"> 
+
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+	<label for="valuefromenergy1">从:</label>
+
+<!--unit begin-->
+
+<input type="number"  name="valuefromenergy1" id="valuefromenergy1" value="1" onkeyup="cc_energy1();" >
+
+<select name="selectfromenergy1" id="selectfromenergy1"  onchange="cc_energy1();" >
+
+<option value="0" selected>焦耳(joule)[J]</option><option value="1" >千兆焦耳(gigajoule)[GJ]</option><option value="2" >兆焦耳(megajoule)[MJ]</option><option value="3" >千焦耳(kilojoule)[kJ]</option><option value="4" >瓦特秒(watt second)[Ws]</option><option value="5" >千瓦小時kilowatt hour[kWh]</option><option value="6" >瓦特小时(watt hour)[Wh]</option><option value="7" >牛顿米(newton meter)[Nm]</option><option value="8" >卡 calorie (IT)国际表</option><option value="9" >卡 calorie (th)热化学</option><option value="10" >卡 calorie (mean)平均</option><option value="11" >卡 calorie (15C)</option><option value="12" >卡 calorie (20C)</option><option value="13" >卡路里calorie(营养,食物)</option><option value="14" >千卡 kilocalorie(IT)国际表</option><option value="15" >千卡 kilocalorie(th)热化学</option><option value="16" >Btu 英(th)</option><option value="17" >Btu 英(mean)</option><option value="18" >摄氏热单位(centigrade heat)</option><option value="19" >电子伏特electron volt[eV]</option><option value="20" >马力小时(horsepower hour)</option><option value="21" >公斤米(kilogram meter)</option><option value="22" >英呎磅力(foot-pound)[ft.lbf]</option><option value="23" >英寸磅力(inch-pound)[in.lbf]</option><option value="24" >克卡(therm)</option><option value="25" >尔格 (erg)</option><option value="26" >英呎磅达(foot poundal)</option>
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+<label for="valuetoenergy1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+<input type="text"  name="valuetoenergy1" id="valuetoenergy1" value="1" onkeyup="ccb_energy1();" >
+
+
+
+<select name="selecttoenergy1" id="selecttoenergy1"  onchange="cc_energy1();" >
+
+<option value="0" selected>焦耳(joule)[J]</option><option value="1" >千兆焦耳(gigajoule)[GJ]</option><option value="2" >兆焦耳(megajoule)[MJ]</option><option value="3" >千焦耳(kilojoule)[kJ]</option><option value="4" >瓦特秒(watt second)[Ws]</option><option value="5" >千瓦小時kilowatt hour[kWh]</option><option value="6" >瓦特小时(watt hour)[Wh]</option><option value="7" >牛顿米(newton meter)[Nm]</option><option value="8" >卡 calorie (IT)国际表</option><option value="9" >卡 calorie (th)热化学</option><option value="10" >卡 calorie (mean)平均</option><option value="11" >卡 calorie (15C)</option><option value="12" >卡 calorie (20C)</option><option value="13" >卡路里calorie(营养,食物)</option><option value="14" >千卡 kilocalorie(IT)国际表</option><option value="15" >千卡 kilocalorie(th)热化学</option><option value="16" >Btu 英(th)</option><option value="17" >Btu 英(mean)</option><option value="18" >摄氏热单位(centigrade heat)</option><option value="19" >电子伏特electron volt[eV]</option><option value="20" >马力小时(horsepower hour)</option><option value="21" >公斤米(kilogram meter)</option><option value="22" >英呎磅力(foot-pound)[ft.lbf]</option><option value="23" >英寸磅力(inch-pound)[in.lbf]</option><option value="24" >克卡(therm)</option><option value="25" >尔格 (erg)</option><option value="26" >英呎磅达(foot poundal)</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+	结果:
+
+		<input type=text name="valueresultenergy1" id="valueresultenergy1" >
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

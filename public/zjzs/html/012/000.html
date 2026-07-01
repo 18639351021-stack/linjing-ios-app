@@ -1,0 +1,151 @@
+﻿          <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>溢流类型分析</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"     data-theme="a" ><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+    <form name="form1">
+                  <h3  align="center">溢流类型分析</h3><hr  class="hr0">
+                  
+                  
+          <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 垂直井深(m):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="3000"  name="B1"   id="shuru" autofocus="autofocus" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >         
+                  
+                  
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >关井立压(MPa):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="3.5"   name="B2" id="shuru" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >   
+            
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >关井套压(MPa):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="8"   name="B3" id="shuru" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >           
+                  
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+溢流量(m<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number" VALUE="11"  name="B4"  id="shuru"  data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >  
+            
+            
+             <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头直径(mm):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number" VALUE="215.9"  name="B5"  id="shuru"  data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >
+                         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具外径(mm):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number" VALUE="127"  name="B6"  id="shuru"  data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >             
+                                
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度(g/cm<sup>3</sup >):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input  type="number"   VALUE="1.66"    name="B7"   id="shuru" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >  
+            
+            
+                                            
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井眼扩大率(100%):
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input  type="number"   VALUE="1.05"    name="B8"   id="shuru" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >                   
+                  
+                       <h4  align="center">计算结果</h4> <hr   class="hr0" >
+                       
+              <div class="ui-block-a"  style="width:62%;"  id="q2" >
+溢流流体密度（g/cm<sup>3</sup >）
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="text"  name="B9"    id="B9" style="color:#6699ee"  > 
+
+            </div>   <hr   style="width:100%;" >    
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地层压力（MPa）
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="text"  name="B10"    id="B10" style="color:#6699ee"  > 
+
+            </div>   <hr   style="width:100%;" > 
+            
+                <div class="ui-block-a"  style="width:52%;"  id="q2" >
+溢流类型分析:
+            </div>    
+            
+<div class="ui-block-b" style="width:45%;">
+<input type="text"  name="B11"    id="B11" style="color:#6699ee"  > 
+
+            </div>   <hr   style="width:100%;" >                
+                       
+        
+
+当γi=0.12-0.36（g/cm<sup>3</sup >）   溢流流体为天然气溢流. </p>
+当γi=0.37-0.60（g/cm<sup>3</sup >）   溢流流体为油.     </p>
+当γi=0.61-0.84（g/cm<sup>3</sup >）   溢流流体为油水混合物. </p>
+当γi=0.85-1.07（g/cm<sup>3</sup >）   溢流流体为水.   </p>
+当γi=1.07-1.20（g/cm<sup>3</sup >）   溢流流体为盐水.  </p>
+
+
+	
+</form>  	</div>
+
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"    name="B5"   onClick="JS115()" >
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+
+</div></body></html>

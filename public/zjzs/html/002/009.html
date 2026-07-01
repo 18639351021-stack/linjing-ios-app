@@ -1,0 +1,171 @@
+﻿      <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>钻井液流态(Z值)计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+         <H4   align="center">钻井液流态(Z值)计算</H4>    <hr class="hr0"> 
+<form name="form1">
+
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 井径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+  <input type="number"   VALUE="216"  name="G4"  autofocus="autofocus"  data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻柱外径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="127"  name="G5"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+   
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(l/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"   VALUE="27"  name="G6"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  井深(m)	:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="3000"  name="G7"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+    钻井液密度(g/cm<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1.2"  name="G8"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+    Φ600	:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="55"  name="G9"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+        
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  Φ300	:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="40"  name="G10"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >          
+          
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆转速(r/min)	:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="90"  name="G11"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >          
+                      
+     <H4   align="center">计        算         结        果</H4>    <hr class="hr0">
+           
+         
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(in):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L5" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻柱外径(in):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L7" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >         
+   
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度(lb/gal):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L8" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+AV1000S<SUP>-1</SUP>(mPa.s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L10" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" > 
+
+  
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+AV500S<SUP>-2</SUP>(mPa.s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L11" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+塑性粘度(mPa·s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L12" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >            
+
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+动切力(Pa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L13" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+动塑比:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L14" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >           
+            
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流性指数(n值):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl" id="L15" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+稠度系数(K值)(Pa.s<SUP>n</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L16" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >           
+            
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液上返速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L17" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Z值:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L20" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >         
+            
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流态:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="L21" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >  
+          
+  
+			
+</form>  
+    
+    
+    Z值又称Z准数，是判别钻井液流态的准数之一，主要用于环形空间流态的判别。液流在管路截面上的流速分布是不均匀的，速梯的分布也是不均匀的，因而钻井液的有效粘度(视粘度)也是沿管径方向变化的。可是雷诺数的计算公式中所用的流速是过流截面上的平均流速，所用的粘度也是不变的值，雷诺数只能反映出流动的宏观状态，不能反映出流动断面上各点的微观状态。事实上，沿着管路的径向，由于流速和视粘度的变化，反映惯性力与粘滞力的比值的雷诺数也在变化。整个过流断面在总体上可能还处在层流流态下，可是在沿着径向的每个点上已经出现了紊流。计算出最早出现紊流的那个点处的雷诺数值，就是Z值。
+        
+          <HR>
+
+	</div>
+
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="zzhi60()"  id="B4" >
+</li>				
+</ul>
+	</div>
+</div>
+</div></body></html>

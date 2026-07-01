@@ -1,0 +1,187 @@
+﻿                           <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>已知靶点A，靶点B，垂深，求井口坐标</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+      <h3  align="center">已知靶点A，靶点B，垂深，求井口坐标（双增剖面法）</h3> <hr class="hr0"> <form name="form1">
+
+
+
+   <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点AX坐标（北坐标）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="4914850"    name="B2" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点AY坐标（东坐标）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="30323470"  name="C2"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点A垂深:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="2370"  name="D2"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点BX坐标（北坐标）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="4914765"  name="B3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点BY坐标（东坐标）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="30323495"  name="C3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ <div class="ui-block-a"  style="width:60%;"  id="q2" >
+靶点B垂深(m):
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="2530"  name="D3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:60%;"  id="q2" >
+第一造斜率(°/30m):
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="2.52"  name="G15"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:60%;"  id="q2" >
+第一造斜完井斜(°):
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="28.98"  name="H15"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+ <div class="ui-block-a"  style="width:60%;"  id="q2" >
+第二造斜率（°/30m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="8.5"  name="I15"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+ 
+ <div class="ui-block-a"  style="width:60%;"  id="q2" >
+探顶造斜率（°/30m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="3"  name="L11"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+ <div class="ui-block-a"  style="width:60%;"  id="q2" >
+探顶段长（m）:
+</div> <div class="ui-block-b"  style="width:37%;"   >
+<input type="number"  VALUE="30"  name="M11"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+探顶井斜角:</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="B7"    id="B7" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+造斜点深度(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="B12"    id="B12" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" > 
+ 
+
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+总井深(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="ZC"    id="ZC" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" > 
+     
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井斜角(°):</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="B8"    id="B8" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+方位角(°):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="B10"    id="B10" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+靶前距(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="F15"    id="F15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+ 
+  <div class="ui-block-a"  style="width:35%;"  id="q2" >
+靶点位于:
+</div> <div class="ui-block-b"  style="width:62%;"   >
+<input type="text"  name="AB11"    id="AB11" style="color:#6699ee"  >
+ </div> 
+ 
+    <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+第一造斜段斜长(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="ZXD"    id="ZXD" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+造斜点到A点垂距(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="E15"    id="E15" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井口坐标X:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="B4"    id="B4" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井口坐标Y:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="C4"    id="C4" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+   
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+A在B的:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="AB"    id="AB" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >    
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+AB靶点水平位移(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="BC1"    id="BC1" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+AB靶点垂深差(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="CS1"    id="CS1" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+AB靶点斜长(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="XC"    id="XC" style="color:#6699ee"  >
+ </div>    <hr   style="width:100%;" >  
+    说明：</p>本计算结果仅供参考，请认真核对相关设计。	
+</form>
+    关于使用方法</p>
+  第一造斜率完井井斜可直接设置AB靶点相连井斜。</p>输入软件之后先计算一 次得到数据再输入软件。
+  其他可以不改。</p>本计算参用平均角法估算。改变剖面只需要改变第一造斜率就可以。
+
+</div>
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="H6"   onClick="bd83()"  id="H6" > 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

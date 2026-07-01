@@ -1,0 +1,164 @@
+﻿            <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>压力转换</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_pressure1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+           <h3  align="center">压力转换</h3> <hr class="hr0"> 
+  
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+	<label for="valuefrompressure1">从:</label>
+
+
+
+<!--unit begin-->
+
+
+
+<input type="number"   name="valuefrompressure1" id="valuefrompressure1" value="1" onkeyup="cc_pressure1();" >
+
+
+
+<select name="selectfrompressure1" id="selectfrompressure1"  onchange="cc_pressure1();" >
+
+<option value="0" selected>帕 [Pa]</option>
+<option value="1" >千帕(kilopascal)[kPa]</option>
+<option value="2" >百帕(hectopascal)[hPa]</option>
+<option value="3" >兆牛顿/平方毫米</option>
+<option value="4" >兆牛顿/平方米</option>
+<option value="5" >千牛頓/平方米</option>
+<option value="6" >千牛頓/平方米</option>
+<option value="7" >牛顿/平方毫米</option>
+<option value="8" >牛顿/平方厘米</option>
+<option value="9" >牛顿/平方米</option>
+<option value="10" >巴(bar)</option>
+<option value="11" >毫巴(millibar)</option>
+<option value="12" >公斤/平方厘米</option>
+<option value="13" >公斤/平方米</option>
+<option value="14" >吨/平方厘米</option>
+<option value="15" >吨/平方米</option>
+<option value="16" >吨(UK)/平方英尺</option>
+<option value="17" >吨(UK)/平方英寸</option>
+<option value="18" >吨(US)/平方英尺</option>
+<option value="19" >吨(US)/平方英寸</option>
+<option value="20" >磅/平方英寸 [psi]</option>
+<option value="21" >磅/平方英尺</option>
+<option value="22" >厘米汞柱(centimeter mercury)</option>
+<option value="23" >毫米汞柱(millimeter of mercury)</option>
+<option value="24" >英寸汞柱(inch of mercury)</option>
+<option value="25" >米水柱(meter of water)</option>
+<option value="26" >厘米水柱(centimeter water)</option>
+<option value="27" >毫米水柱(millimeter of water)</option>
+<option value="28" >英尺水柱(foot of water)</option>
+<option value="29" >英寸水柱(inch of water)</option>
+<option value="30" >磅达/平方英尺(poundal/)</option>
+<option value="31" >kip-force/square inch</option>
+<option value="32" >torr (mm Hg 0&#176C)</option>
+<option value="33" >大气圧力(atmosphere)[atm]</option>
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+
+<label for="valuetopressure1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+
+<!--unit begin-->
+
+<input type="text"  name="valuetopressure1" id="valuetopressure1" value="1" onkeyup="ccb_pressure1();" >
+
+
+
+<select name="selecttopressure1" id="selecttopressure1"  onchange="cc_pressure1();" >
+
+<option value="0" selected>帕 [Pa]</option><option value="1" >千帕(kilopascal)[kPa]</option>
+<option value="2" >百帕(hectopascal)[hPa]</option>
+<option value="3" >兆牛顿/平方毫米</option>
+<option value="4" >兆牛顿/平方米</option>
+<option value="5" >千牛頓/平方米</option>
+<option value="6" >千牛頓/平方米</option>
+<option value="7" >牛顿/平方毫米</option>
+<option value="8" >牛顿/平方厘米</option>
+<option value="9" >牛顿/平方米</option>
+<option value="10" >巴(bar)</option>
+<option value="11" >毫巴(millibar)</option>
+<option value="12" >公斤/平方厘米</option>
+<option value="13" >公斤/平方米</option>
+<option value="14" >吨/平方厘米</option>
+<option value="15" >吨/平方米</option>
+<option value="16" >吨(UK)/平方英尺</option>
+<option value="17" >吨(UK)/平方英寸</option>
+<option value="18" >吨(US)/平方英尺</option>
+<option value="19" >吨(US)/平方英寸</option>
+<option value="20" >磅/平方英寸 [psi]</option>
+<option value="21" >磅/平方英尺</option>
+<option value="22" >厘米汞柱(centimeter mercury)</option>
+<option value="23" >毫米汞柱(millimeter of mercury)</option>
+<option value="24" >英寸汞柱(inch of mercury)</option>
+<option value="25" >米水柱(meter of water)</option>
+<option value="26" >厘米水柱(centimeter water)</option>
+<option value="27" >毫米水柱(millimeter of water)</option>
+<option value="28" >英尺水柱(foot of water)</option>
+<option value="29" >英寸水柱(inch of water)</option>
+<option value="30" >磅达/平方英尺(poundal/)</option>
+<option value="31" >kip-force/square inch</option>
+<option value="32" >torr (mm Hg 0&#176C)</option>
+<option value="33" >大气圧力(atmosphere)[atm]</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+
+		
+
+
+
+
+
+		结果:
+
+		<input type=text name="valueresultpressure1" id="valueresultpressure1" >
+
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

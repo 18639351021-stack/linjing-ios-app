@@ -1,0 +1,114 @@
+﻿                                          <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>钻井液流核计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+  <H4   align="center">钻井液流核计算</H4>    <hr class="hr0"> 
+<form name="form1">
+
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"   VALUE="216"  name="G5" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具外径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="127"  name="G6"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(L/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="30"  name="G7"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ600:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="40"  name="G8"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ300:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="30"  name="G9"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+
+ <h4  align="center"> 计算结果</h4> <hr class="hr0">  
+
+      
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+表观粘度(mPa·s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G12" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+塑性粘度(mPa·s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G13" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >  
+
+      
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+动切力(Pa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G14" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+动塑比:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G16" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >     
+      
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流性指数(n值):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G17" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+稠度系数(K值)(Pa·S<sup>n</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G18" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >     
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+上返速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G20" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空剪切速率(S<sup>-1</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G23" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" > 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+流核(cm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="G24" style="color:#6699ee"   class="shuchu"  >
+ </div> <hr style="width:100%;" >  
+</form>  
+	</div>
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="JS92()"  id="B4" >
+</li>
+					
+</ul>
+	</div>	</div>
+
+</div></body></html>

@@ -1,0 +1,96 @@
+﻿  <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>温度转换</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_temperature1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+
+          <h3  align="center">温度转换</h3> <hr class="hr0"> 
+  
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+	<label for="valuefromtemperature1">从:</label>
+
+<!--unit begin-->
+
+
+<input type="number"  name="valuefromtemperature1" id="valuefromtemperature1" value="1" onkeyup="cc_temperature1();" >
+
+
+<select name="selectfromtemperature1" id="selectfromtemperature1"  onchange="cc_temperature1();" >
+
+<option value="0" selected>摄氏(Celsius)[&#176C]</option>
+<option value="1" >华氏(Fahrenheit)[&#176F]</option>
+<option value="2" >开氏(Kelvin)[K]</option>
+<option value="3" >列氏(Rankine)[&#176R]</option>
+<option value="4" >郎肯(Reaumure)[&#176r]</option>
+
+
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+
+
+<label for="valuetotemperature1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+
+
+<!--unit begin-->
+
+<input type="text" size="20" name="valuetotemperature1" id="valuetotemperature1" value="1" onkeyup="ccb_temperature1();" >
+
+
+
+<select name="selecttotemperature1" id="selecttotemperature1"  onchange="cc_temperature1();" >
+
+<option value="0" selected>摄氏(Celsius)[&#176C]</option><option value="1" >华氏(Fahrenheit)[&#176F]</option><option value="2" >开氏(Kelvin)[K]</option><option value="3" >列氏(Rankine)[&#176R]</option><option value="4" >郎肯(Reaumure)[&#176r]</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+
+		结果:
+
+		<input type=text name="valueresulttemperature1" id="valueresulttemperature1" >
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

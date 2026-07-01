@@ -1,0 +1,51 @@
+name: Build Doc AI Unsigned IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    name: Build doc AI unsigned IPA
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build web assets
+        run: npm run build
+
+      - name: Add iOS platform
+        run: npx cap add ios || true
+
+      - name: Sync Capacitor iOS
+        run: npx cap sync ios
+
+      - name: Patch iOS permissions
+        run: bash scripts/patch-ios-plist.sh
+
+      - name: Patch iOS app icon
+        run: bash scripts/patch-ios-icons.sh
+
+      - name: Build unsigned app
+        run: bash scripts/build-unsigned-ipa.sh
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: linjing-doc-ai-unsigned-ipa
+          path: artifacts/linjing-doc-ai-unsigned.ipa
+          if-no-files-found: error

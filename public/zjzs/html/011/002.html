@@ -1,0 +1,168 @@
+﻿                 <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>解卡液推进计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+<h4 align="center">解卡液推进计算</h4>  <hr class="hr0">
+<form name="form1">
+
+
+ <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头位置(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="number"  VALUE="3000"    name="H10" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+解卡液量(m<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="22"    name="H11"data-clear-btn="true"   > 
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+解卡液泵入时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="10"    name="H12"data-clear-btn="true"   > 
+ </div> <hr style="width:100%;" >
+ 
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(l/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="27"    name="H13"data-clear-btn="true"   > 
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(cm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="21.6"    name="H14"data-clear-btn="true"   > 
+ </div> <hr style="width:100%;" >
+
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具外径(cm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="12.7"    name="H15"data-clear-btn="true"   > 
+ </div> <hr style="width:100%;" >
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具内径(cm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="10.8"    name="H16"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具内剩余(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="200"    name="H17"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+    <h4  align="center"> 计算结果</h4> <hr class="hr0">
+ 
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井眼容积(m<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H20" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空容积(m<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H21" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+实际泵入解卡液量(m<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H28" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+顶替时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H29" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具内容积(m<sup>3</sup>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H30" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(m<sup>3</sup>/min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H34" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+到达钻头时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H32" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+上返速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H36" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+迟到时间(min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H35" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+
+
+解卡液段长度
+    <hr>
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 计划(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H37" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >  
+    
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+实际(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H38" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >     
+    
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+界面(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="G11"  id="H39" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >         
+    
+   
+
+
+
+
+
+
+
+
+</form>  	</div>
+
+
+
+<div data-role="footer" data-position="fixed"   id="glideDiv0">	
+<div  data-role="navbar" >
+<ul>
+<li>
+<input type="button" value="计算"  name="B4"   onClick="jieqiatj34()"  id="B4" >
+</li>					
+</ul>
+</div>
+</div>
+</div></body></html>

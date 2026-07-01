@@ -1,0 +1,120 @@
+﻿           
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>长度单位计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_volume1.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+   
+        <h3  align="center">体积转换</h3> <hr class="hr0"> 
+  
+   
+          
+
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+<!--unit begin-->
+ <label for="valuefromvolume1">从:</label><input type="number"  name="valuefromvolume1" id="valuefromvolume1" value="1" onkeyup="cc_volume1();"    data-clear-btn="true" >
+  
+<select name="selectfromvolume1" id="selectfromvolume1"  >
+
+<option value="0"   >公升(liter) [l,L]</option>
+<option value="1" >公升(liter 1901-1964)</option>
+<option value="2" >立方公寸[dm^3]</option>
+<option value="3" >立方十米[dam^3]</option>
+<option value="4" >立方米(cubic meter)[m^3]</option>
+<option value="5" >公合(deciliter,0.1公升)</option>
+<option value="6" >厘升(centiliter)</option>
+<option value="7" >立方厘米[cm^3]</option>
+<option value="8" >毫升(milliliter)</option>
+<option value="9" >立方毫米[mm^3]</option>
+<option value="10" >英亩英尺(acre foot)</option>
+<option value="11" >立方码(cubic yard)[yd^3]</option>
+<option value="12" >立方英尺(cubic foot)[ft^3]</option>
+<option value="13" >立方英寸(cubic inch)[in^3]</option>
+<option value="14" >加仑(gallon,UK)</option>
+<option value="15" >加仑(gallon,US dry)</option>
+<option value="16" >加仑(gallon,US)</option>
+<option value="17" >桶(barrel,oil)</option>
+<option value="18" >桶(barrel,UK)</option>
+<option value="19" >桶(barrel,US)</option>
+<option value="20" >液量盎司(fluid ounce,UK)</option>
+<option value="21" >液量盎司(fluid ounce,US)</option>
+<option value="22" >品脱(pint,UK)</option>
+<option value="23" >品脱(pint,US dry)</option>
+<option value="24" >品脱(pint,US)</option>
+<option value="25" >夸脱(quart,UK)</option>
+<option value="26" >夸脱(quart,US v)</option>
+<option value="27" >夸脱(quart,US)</option>
+<option value="28" >杯(cup,美制)</option>
+<option value="29" >杯(cup,公制)</option>
+<option value="30" >杯(cup,英制)</option>
+<option value="31" >大汤匙(table spoon,美制)</option>
+<option value="32" >大汤匙(table spoon,公制)</option>
+<option value="33" >大汤匙(table spoon,英制)</option>
+<option value="34" >茶匙(tea spoon,美制)</option>
+<option value="35" >茶匙(tea spoon,公制)</option>
+<option value="36" >茶匙(tea spoon,英制)</option>
+
+</select>
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+<label for="valuefromvolume1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+<input type="number"  name="valuetovolume1" id="valuetovolume1" value="1" onkeyup="ccb_volume1();" >
+
+
+
+<select name="selecttovolume1" id="selecttovolume1"   onchange="cc_volume1();" >
+
+<option value="0" selected>公升(liter) [l,L]</option><option value="1" >公升(liter 1901-1964)</option><option value="2" >立方公寸[dm^3]</option><option value="3" >立方十米[dam^3]</option><option value="4" >立方米(cubic meter)[m^3]</option><option value="5" >公合(deciliter,0.1公升)</option><option value="6" >厘升(centiliter)</option><option value="7" >立方厘米[cm^3]</option><option value="8" >毫升(milliliter)</option><option value="9" >立方毫米[mm^3]</option><option value="10" >英亩英尺(acre foot)</option><option value="11" >立方码(cubic yard)[yd^3]</option><option value="12" >立方英尺(cubic foot)[ft^3]</option><option value="13" >立方英寸(cubic inch)[in^3]</option><option value="14" >加仑(gallon,UK)</option><option value="15" >加仑(gallon,US dry)</option><option value="16" >加仑(gallon,US)</option><option value="17" >桶(barrel,oil)</option><option value="18" >桶(barrel,UK)</option><option value="19" >桶(barrel,US)</option><option value="20" >液量盎司(fluid ounce,UK)</option><option value="21" >液量盎司(fluid ounce,US)</option><option value="22" >品脱(pint,UK)</option><option value="23" >品脱(pint,US dry)</option><option value="24" >品脱(pint,US)</option><option value="25" >夸脱(quart,UK)</option><option value="26" >夸脱(quart,US v)</option><option value="27" >夸脱(quart,US)</option><option value="28" >杯(cup,美制)</option><option value="29" >杯(cup,公制)</option><option value="30" >杯(cup,英制)</option><option value="31" >大汤匙(table spoon,美制)</option><option value="32" >大汤匙(table spoon,公制)</option><option value="33" >大汤匙(table spoon,英制)</option><option value="34" >茶匙(tea spoon,美制)</option><option value="35" >茶匙(tea spoon,公制)</option><option value="36" >茶匙(tea spoon,英制)</option>
+
+</select>
+     </fieldset>
+    </form>
+  </div>
+<!--unit end-->
+
+		
+
+	
+
+		结果:<br>
+
+		<input type=text name="valueresultvolume1" id="valueresultvolume1" size=66>
+
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

@@ -1,0 +1,270 @@
+﻿                                  <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>钻井液固液相分析</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+        <h3  align="center">钻井液固液相分析</h3> <hr class="hr0">
+<form name="form1">
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+固相含量(g/L):  
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1075"  name="H4"  autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+         
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+固相体积(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="33"  name="H5"    id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >       
+
+          <div class="ui-block-a"  style="width:62%;"  id="q2" >
+含油量(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="2"  name="H6"   id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+         
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+膨润土含量(g/L):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="38.6"   name="H7" id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+ 
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+氯离子[Cl-](mg/L):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="172235"  name="H8"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+         
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加重材料相对密度(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="4"  name="H9"   id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+ 
+             <div class="ui-block-a"  style="width:62%;"  id="q2" >
+低密度固相密度（2.4~2.7)(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="2.6"  name="H10"   id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+         
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+油密度（一般取0.85）(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="0.85"  name="H11"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >   
+         
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+实测密度(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1.18"  name="H12"   id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >             
+            
+        <h4  align="center"> ◆ 计算结果</h4> <hr class="hr0">    
+            
+           ◆ 液相
+             <hr class="hr0">
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+液相体积(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input  class="shuchu"  type="text"  name="hyl"    id="H15" style="color:#6699ee"     >
+ </div> <hr style="width:100%;" >   
+         
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+油相体积(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input class="shuchu"   type="text"  name="hyl"    id="H16" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+水相体积(%): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input class="shuchu"  type="text"  name="hyl"    id="H17" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >             
+             
+  ◆ 水相密度
+             <hr class="hr0">  
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+g/cm<sup>3</sup >:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="H18" style="color:#6699ee"  class="shuchu"  >  
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+lb/gal: 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H19" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >   
+       
+                 
+  ◆ 钻井液密度
+             <hr class="hr0">  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+计算值(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="H20" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+计算值(lb/gal):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H21" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" > 
+  
+  
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+计算值(lb/ft<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H22" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+实测值(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="H23" style="color:#6699ee"  class="shuchu" > 
+ </div> <hr style="width:100%;" > 
+  
+       
+  
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+误差值(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H24" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+高密度加重材料重量含量(kg/m<sup>3</sup >)：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H25" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+     
+ 
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+高密度加重材料体积含量（%）：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H26" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+低密度加重材料体积含量（%）：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H27" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+            
+   
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+低密度加重材料重量含量(kg/m<sup>3</sup >): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H28" style="color:#6699ee"  class="shuchu" > 
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+悬浮固相平均密度(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H29" style="color:#6699ee" class="shuchu"   >
+ </div> <hr style="width:100%;" >
+                      
+
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+悬浮固相含量(g/L): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H30" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+悬浮固相体积(%):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H31" style="color:#6699ee" class="shuchu"   >
+ </div> <hr style="width:100%;" >        
+         
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+修正固相体积(％): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H32" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+MBT(g/l):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H33" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >           
+            
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+CEC(mL): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H34" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+NaCl含量(g/L):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H35" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+  
+    
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+NaCl含量(mg/L): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="H36" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+NaCl体积(％):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="H37" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >          
+
+            
+   ◆ 技术判断
+             <hr class="hr0">                       
+  
+        
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+D/B计算值(g/cm<sup>3</sup >):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="N32" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >          
+             
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+计算值判断:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="Q32" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >        
+
+
+   
+
+
+</form>  
+    
+
+
+	</div>
+
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="gx55()"  id="B4" >
+</li>
+					
+</ul>
+	</div>	</div>
+
+
+
+
+</div></body></html>

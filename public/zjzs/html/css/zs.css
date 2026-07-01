@@ -1,0 +1,22 @@
+table{border-collapse:collapse}
+.ui-body-c{text-shadow:none}
+#glideDiv0{position:fixed; bottom:0;left:0; width:100%;line-height:55px;height:55px;	padding: 5px 0px;font-size: 20px; size="20"  }
+#glideDiv1{position:fixed; bottom:0;left:0; width:100%; height:50px;}
+#shuru{width:90%; 	margin: 0 auto 0;}
+ #q2{      
+   height:40PX; 
+    line-height:40PX; 
+ }
+
+ .hr0{ height:1px;border:none;border-top:1px dashed #0066CC;  with:100%;}
+ .hr1{ with:100%;}
+ 
+ 
+input.shuchu{width:90%; 	margin: 0 auto 0;}11	
+
+ .mylist{ width:100%; height:74px; float:left;}    
+    .mylist ul{ width:90%;}    
+    .myli li{ width:45%; float:left; display:block;}
+#mcover{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);
+
+.ui-content { border-width: 0; overflow: scroll; overflow-x:scroll; padding: 15px; }

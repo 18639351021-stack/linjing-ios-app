@@ -1,0 +1,99 @@
+﻿                               
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>密度计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<script type="text/javascript" src="../js/unitconverter_density1.js"></script>
+<script type="text/javascript" src="../js/unitconverter_density2.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+   
+        <h3  align="center">密度转换</h3> <hr class="hr0"> 
+  
+   
+          
+
+
+  <div >
+    <form >
+      <fieldset data-role="fieldcontain">
+	
+	<label for="valuefromdensity1">从:</label>
+
+
+
+<!--unit begin-->
+
+
+<input    type="number"    name="valuefromdensity1" id="valuefromdensity1" value="1" onkeyup="cc_density1();" >
+
+
+<select name="selectfromdensity1" id="selectfromdensity1" onchange="cc_density1();" >
+
+<option value="0" selected>克/立方公分</option><option value="1" >克/公升</option><option value="2" >克/毫升</option><option value="3" >公斤/立方米</option><option value="4" >公斤/公升</option><option value="5" >百万克/立方米</option><option value="6" >毫克/毫升</option><option value="7" >毫克/公升</option><option value="8" >盎司/立方英寸</option><option value="9" >盎司/加仑 (UK)</option><option value="10" >盎司/加仑 (US)</option><option value="11" >磅/立方英寸</option><option value="12" >磅/立方英尺</option><option value="13" >磅/加仑 (UK)</option><option value="14" >磅/加仑 (US)</option><option value="15" >grain/加仑 (UK)</option><option value="16" >grain/加仑 (US)</option><option value="17" >公吨/立方米</option><option value="18" >公吨 (UK)/立方码</option><option value="19" >公吨 (US)/立方码</option><option value="20" >slug/立方英尺</option>
+
+</select>
+
+     </fieldset>
+     
+    </form>
+  </div>
+<!--unit end-->
+
+
+
+
+<label for="valuefromdensity1">换到:</label>
+
+<!--unit begin-->
+<div>
+    <form >
+      <fieldset data-role="fieldcontain">
+
+
+
+<!--unit begin-->
+
+<input  name="valuetodensity1" id="valuetodensity1" value="1" onkeyup="ccb_density1();" >
+
+
+
+<select name="selecttodensity1" id="selecttodensity1"  onchange="cc_density1();" >
+
+<option value="0" selected>克/立方公分</option><option value="1" >克/公升</option><option value="2" >克/毫升</option><option value="3" >公斤/立方米</option><option value="4" >公斤/公升</option><option value="5" >百万克/立方米</option><option value="6" >毫克/毫升</option><option value="7" >毫克/公升</option><option value="8" >盎司/立方英寸</option><option value="9" >盎司/加仑 (UK)</option><option value="10" >盎司/加仑 (US)</option><option value="11" >磅/立方英寸</option><option value="12" >磅/立方英尺</option><option value="13" >磅/加仑 (UK)</option><option value="14" >磅/加仑 (US)</option><option value="15" >grain/加仑 (UK)</option><option value="16" >grain/加仑 (US)</option><option value="17" >公吨/立方米</option><option value="18" >公吨 (UK)/立方码</option><option value="19" >公吨 (US)/立方码</option><option value="20" >slug/立方英尺</option>
+
+</select>
+
+     </fieldset>
+    </form>
+  </div>
+
+
+
+
+		结果:
+
+		<input type=text name="valueresultdensity1" id="valueresultdensity1" >
+
+
+
+
+ <div data-role="footer" data-position="fixed"   id="glideDiv0">
+		
+			</div>
+		</div>
+
+
+
+</div></body></html>

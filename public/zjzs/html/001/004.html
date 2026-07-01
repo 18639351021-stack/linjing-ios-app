@@ -1,0 +1,173 @@
+﻿       <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>复合钻具卡点计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style> 
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+    <h3  align="center">复合钻具卡点计算</h3> <hr class="hr0"> 
+    <form name="form1">
+	
+	 <div class="ui-block-a"  style="width:62%;"  id="q2" >
+上提拉力(t):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="58.16"   name="B2" data-clear-btn="true" autofocus="autofocus"   >
+
+            </div> <hr  style="width:100%;" > 
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具伸长量(cm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="206"   name="I7" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" >    
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具 L1长度（m）:
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+
+             <input type="number"  VALUE="1950"    name="B1" data-clear-btn="true"   >
+            </div> <hr style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L2长度（m）:
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="3830"  name="D1" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" ><div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L3长度（m）:
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="478"   name="F1" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > 
+            
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L1外径(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="149.2"   name="B5" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L1壁厚(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="11.22"   name="B6" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" >
+            
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L2外径(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="193.7"   name="D5" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L2壁厚(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="12.7"   name="D6" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" >   
+            
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L3外径(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="200.03"   name="F5" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" > <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻具L3壁厚(mm):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="15.8"   name="F6" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" >  
+                 
+            
+        
+            
+            
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钢材弹性系数(MPa):
+            </div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number" VALUE="2100000"   name="B3" data-clear-btn="true"   >
+
+            </div> <hr  style="width:100%;" >           
+   
+  <h4  align="center"> 计算结果</h4> <hr class="hr0">
+  
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  L1截面积（cm<sup>2</sup >）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="B4" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  L2截面积（cm<sup>2</sup >）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="D4" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ L3截面积（cm<sup>2</sup >）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="F4" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+  
+  
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  L1伸长（cm）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="B7" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  L2伸长（cm）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="D7" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+        <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ L3伸长（cm）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="F7" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+
+  
+  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  卡点位置（m）: </div> 
+<div class="ui-block-b"  style="width:35%;"   >
+<input type="text"    id="B12" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+
+ <div class="ui-block-a"  style="width:42%;"  id="q2" >
+  结论: </div> 
+<div class="ui-block-b"  style="width:57%;"   >
+<input type="text"    id="B14" style="color:#6699ee"  >
+</div> <hr  style="width:100%;" > 
+
+   说明：</p>本计算结果仅供参考，请按相关标准执行。</p>    
+    *上提拉力为终了提升拉力与卡钻前原悬重之差,多次测量取平均值，单位kN</p>
+    *钻具L1,L2,L3为钻具自上而下输入。</p>
+    *钻具伸长量多次测量取平均值。</p>
+    *本计算仅供参考，一切以现场专家指导为准。</p>        
+   
+</form>  
+       </div>
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B4"   onClick="JS123()"  id="B4" > 
+					</li>
+					
+				</ul>
+			</div>
+	
+
+
+
+
+	</div>
+</div></body></html>
+      	</div>

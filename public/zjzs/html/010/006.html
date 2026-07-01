@@ -1,0 +1,141 @@
+﻿                   <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>低密度水泥浆计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>                                     
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+         <h3  align="center">加入外掺料的水泥配水泥浆计算</h3> <hr class="hr0"> <form name="form1">
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+外掺料与水泥的体积比:
+    </div>    
+            
+     <div class="ui-block-b" style="width:35%;">
+  <input type="number"    name="G4"  value="0.9"    autofocus="autofocus"   data-clear-btn="true"   >
+      </div>   
+  
+  
+     <hr   style="width:100%;" > 
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+配浆水密度（g/cm<sup>3</sup >）：
+    </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+  <input type="number"    name="G5"  value="1"    data-clear-btn="true"   >     </div>   
+
+    <hr   style="width:100%;" > 
+  
+    
+    
+   <div class="ui-block-a"  style="width:62%;"  id="C3" >
+水泥浆密度（g/cm<sup>3</sup >）:
+</div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input  class="browsers"   type="number"    name="G6"   value="1.5"   data-clear-btn="true"   >
+    
+</div>  
+ <hr   style="width:100%;" >    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+水泥密度（g/cm<sup>3</sup >）:
+</div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="3.1"  name="G7" data-clear-btn="true"   >
+</div>  
+
+    <hr   style="width:100%;" >    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+外掺料密度（g/cm<sup>3</sup >）:
+</div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="1.3"  name="G8" data-clear-btn="true"   >
+</div>  
+     <hr   style="width:100%;" >    
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+配浆量（m<sup>3</sup >）:
+</div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  VALUE="10"  name="G9" data-clear-btn="true"   >
+</div>  
+
+
+ <hr   style="width:100%;" > 
+  <h4  align="center"> 计算结果</h4> <hr class="hr0">
+    
+ 
+  
+  
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加入外掺料后水泥的密度（g/cm<sup>3</sup >） ：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="G12"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" > 
+   
+   
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+加入外掺料的水泥量（t）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="G13"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" > 
+   
+   
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+配浆水体积（m<sup>3</sup >）   ：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="G14"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" > 
+   
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+水灰比 ：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="G15"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" > 
+   
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+加入外掺料的水泥量配浆后所产生的体积（m<sup>3</sup >） ：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="G16"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" >    
+   
+            外掺料：如硅粉、铁矿粉、硅藻土等
+   	
+</form>
+</div>
+
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B3"   onClick="wcl77()"  id="B3">
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+
+</div></body></html>

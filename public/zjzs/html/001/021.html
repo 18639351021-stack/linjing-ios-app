@@ -1,0 +1,70 @@
+﻿                     <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>机械比能计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+      <h3  align="center">机械比能计算</h3> <hr class="hr0"> <form name="form1">
+
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井眼直径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="215.9"    name="C3" autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻压（kN）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="100"  name="B3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+转盘（顶驱）转数（r/min）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="80"  name="D3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻进速度（m/h）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="30"  name="E3"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+
+     <h4  align="center"> 计算结果</h4> <hr class="hr0">
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+机械比能:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="A4"    id="A4" style="color:#6699ee"  >
+ </div> <hr style="width:100%;" >
+    说明：比能值可在钻进过程中监测钻头工作状态，比能值越低，钻头破岩效率越高，若在均质岩层中钻进，比能值应为常数，随着钻头的磨损，钻速的下降，比能值缓慢上升。
+
+
+
+
+	
+</form>
+
+</div>
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="A4"   onClick="JXBN72()"  id="B3" > 
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+</div></body></html>

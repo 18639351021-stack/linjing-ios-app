@@ -1,0 +1,228 @@
+﻿      <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>水眼压降计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style> 
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1>水眼压降计算</h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+   <h3  align="center">水眼压降,泵压估算,水力加压器加压负荷</h3>  <hr class="hr0">
+
+<form name="form1">
+       
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  钻井液密度（g/cm<sup>3</sup >）：
+            </div>    
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number" name="H10"   VALUE="1.05"     autofocus="autofocus" data-clear-btn="true"   >
+
+            </div>   <hr   style="width:100%;" >
+            
+             <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  排量（L/s）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H11"   VALUE="30" data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            
+            
+            
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+               水眼1（mm）：
+            
+            </div>
+            
+            <div class="ui-block-b" style="width:35%;">
+               <input type="number"  name="H1"  VALUE="11.1" data-clear-btn="true"   >
+            </div> 
+            <hr  style="width:100%;" >
+            
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+            水眼2（mm）：
+            </div>
+           <div class="ui-block-b" style="width:35%;">
+           <input type="number"  name="H2"    VALUE="11.1" data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+             水眼3（mm）：                             
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H3"    VALUE="11.1"  data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+              水眼4（mm）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H4" data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+             水眼5（mm）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H5"   data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+              水眼6（mm）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H6"  data-clear-btn="true"   >
+            </div> <hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  水眼7（mm）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H7"  data-clear-btn="true"   >
+            </div><hr   style="width:100%;" >
+            <div class="ui-block-a"  style="width:62%;"  id="q2" >
+  水眼8（mm）：
+            </div>
+            
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H8"  data-clear-btn="true"   >
+            </div>
+            
+            <hr   style="width:100%;" >
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+  水眼9（mm）：
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H9"  data-clear-btn="true"   >
+ </div>     <hr   style="width:100%;" >
+
+
+<div class="ui-block-a"  style="width:62%;"  id="q2" >
+  水眼10（mm）：
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="H91"  data-clear-btn="true"   >
+ </div>     <hr   style="width:100%;" >
+
+        
+         
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井深（m）： 
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="Q1"   VALUE="1000"  data-clear-btn="true"   >
+ </div> 
+ <hr   style="width:100%;" >         
+           
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+管汇压耗（MPa）： 
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="Q2"   VALUE="2.5"  data-clear-btn="true"   >
+ </div>      <hr   style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+螺杆压耗（MPa）： 
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="Q3"   VALUE="5"data-clear-btn="true"   >
+ </div> 
+ <hr   style="width:100%;" >       
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻头直径（mm）： 
+ </div>      
+<div class="ui-block-b" style="width:35%;">
+<input type="number"  name="A1"   VALUE="215.9"data-clear-btn="true"   >
+ </div> 
+ <hr   style="width:100%;" >        
+            
+                <h4  align="center">计算结果</h4>  <hr class="hr0">
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 钻头水眼压降（MPa）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="H12"   style="color:#6699ee" >
+   </div>    <hr   style="width:100%;" > 
+   
+   
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+ 牙轮钻头循环泵压（MPa）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="Q5"   style="color:#6699ee" >
+   </div>         
+      <hr   style="width:100%;" >   
+      
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+PDC钻头循环泵压（MPa）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="Q6"   style="color:#6699ee" >
+   </div>         
+      <hr   style="width:100%;" >
+      
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+      水力加压器加压负荷（t）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="Q7"   style="color:#6699ee" >
+   </div>         
+      <hr   style="width:100%;" >
+         <div class="ui-block-a"  style="width:62%;"  id="q2" >
+      比水功率（w）：
+            </div>
+<div class="ui-block-b" style="width:35%;">
+<input type="text" id="Q8"   style="color:#6699ee" >
+   </div>         
+      <hr   style="width:100%;" >
+     
+   说明：</p>本计算结果仅供参考，请按相关标准执行。</p> 
+   *水力加压器加压负荷仅带水力加压器作为参考。</p>   
+      
+         
+      PDC钻头水眼号：  </p>
+  10号 7.94mm   | 17号 13.49mm </p>
+  11号 8.73mm  |  18号 14.29mm  </p>
+  12号9.53mm    |19号 15.08mm  </p>
+  13号 10.32mm  |  20号 15.88mm   </p>
+  14号 11.11mm  | 21号 16.67mm </p>
+  15号 11.91mm |  22号 17.46mm </p>
+  16号 12.70mm   </p>
+  
+  
+    PDC水眼  直径=号/32×25.4   </p>
+    牙轮水眼就是直径   </p> 
+        <hr   style="width:100%;" >    	
+</form>
+
+
+    </div>
+
+
+
+      <div data-role="footer" data-position="fixed"   id="glideDiv0">
+			<div  data-role="navbar" >
+				<ul>
+					<li><input type="button" value="计算"  name="B3"   onClick="H2O62()"  id="B3" > 
+					</li>
+					
+				</ul>
+			</div>
+	
+
+
+
+</div>
+     	</div>
+
+
+</body></html>

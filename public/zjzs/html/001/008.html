@@ -1,0 +1,413 @@
+﻿         <!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>水力功率分配计算</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="../css/mobile.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/mobile.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/zs.js"></script>
+<link rel="stylesheet" href="../css/lightbox.css" type="text/css">
+<link rel="stylesheet" href="../css/zs.css" type="text/css">
+<style>.kmimg{max-width:100%;height:auto;}</style>
+</head>
+<body>
+<div data-role="page"><div data-role="header"><a data-rel="back" data-icon="back">返回</a><h1></h1><a href="../../index.html" data-role="button" data-icon="home" rel="external">首页</a></div><div style="padding:5px 5px 5px 5px" data-role="content">
+  <H4   align="center">水力功率分配计算</H4>  <hr class="hr0">
+<form name="form1">
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="215.9"  name="H4"    autofocus="autofocus" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆长度(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1000"  name="H5"    id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆内径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="108"  name="H6"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆外径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"  VALUE="127"   name="H7" id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤长度(m):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="58"  name="H8"  id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤内径(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="72"  name="H9"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤外径（mm）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="177.8"  name="H10"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井泵排量(l/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="30"  name="H11"  id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径1＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H12"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径2＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H13"  id="shuru" data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+ 
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径3＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H14"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径4＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H15"  id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+            
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径5＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H16"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴直径6＃(mm):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="20"  name="H17"  id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+                       
+           
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ600:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="99"  name="H18"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ300:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="71"  name="H19"  id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" > 
+                                
+            
+       <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Φ3:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="8"  name="H20"   id="shuru"data-clear-btn="true"   >
+ </div> <hr style="width:100%;" >
+ 
+         
+           
+    
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井液密度（g/cm<sup>3</sup >）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="1.8"  name="H21"  id="shuru"data-clear-btn="true"   >       
+ </div> <hr style="width:100%;" >           
+           
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+螺杆消耗泵压(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="number"   VALUE="3.5"  name="H22"   id="shuru"data-clear-btn="true"   >    
+ </div> <hr style="width:100%;" >  
+
+    <!-- 网格开始 -->
+        <h4  align="center"> 计算结果</h4> <hr class="hr0">  
+        
+           <H5> ◆ 液相</H5>   <hr class="hr0"> 
+           
+           
+    <div class="ui-block-a"  style="width:62%;"  id="q2" >
+塑性粘度(mPa.s)
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input    type="text"  name="hyl"    id="P4" style="color:#6699ee"     >     
+ </div> <hr style="width:100%;" >           
+           
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+表观粘度(mPa.s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input  type="text"  name="hyl"    id="P5" style="color:#6699ee"  >   
+ </div> <hr style="width:100%;" >            
+           
+           
+           
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+动切力(Pa): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input  type="text"  name="hyl"    id="P6" style="color:#6699ee"  >   
+ </div> <hr style="width:100%;" >           
+           
+             
+           
+ <H5> ◆ 水相密度</H5>   <hr class="hr0">             
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+n<sub>p</sub >值: 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P7" style="color:#6699ee"  class="shuchu"  >     
+ </div> <hr style="width:100%;" >     
+   
+   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Kp值(Pa.Sn):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P8" style="color:#6699ee"  class="shuchu"   >   
+ </div> <hr style="width:100%;" >         
+        
+   <H5> ◆ 钻井液密度</H5>   <hr class="hr0">        
+        
+ 
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+na值: 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P9" style="color:#6699ee" class="shuchu"  >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Ka值(Pa.Sn):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P10" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >         
+            
+
+     <div class="ui-block-a"  style="width:62%;"  id="q2" >
+η∞(mPa.s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P11" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+τc(Pa): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P12" style="color:#6699ee"  class="shuchu" > 
+ </div> <hr style="width:100%;" > 
+
+
+      <div class="ui-block-a"  style="width:62%;"  id="q2" >
+Im:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P13" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空上返速度(m/s)  :
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P14" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >            
+            
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空上返速度（m/min）：
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P15" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+环空剪切速率（S<sup>-1</sup >   ）:
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P16" style="color:#6699ee"  class="shuchu"  >
+ </div> <hr style="width:100%;" >             
+          
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+地面管汇压力损耗(MPa): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P17" style="color:#6699ee"  class="shuchu" > 
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆内压力循环损耗(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P18" style="color:#6699ee" class="shuchu"   >
+ </div> <hr style="width:100%;" >            
+            
+            
+
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤内压力循环损耗(MPa): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P19" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻杆外循环压力损耗(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P20" style="color:#6699ee" class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+            
+
+           
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻铤外循环压力损耗(MPa): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P21" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+循环系统压力损耗(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="P22" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >            
+            
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴压降(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="W4" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴水功率(kW):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W5" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >            
+            
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+喷嘴截面积(mm<SUP>2</SUP>): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W6" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >
+          
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+1#(mm<SUP>2</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W7" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >            
+           
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+2#(mm<SUP>2</SUP>): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W8" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >             
+           
+            
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+3#(mm<SUP>2</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W9" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >             
+           
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+4#(mm<SUP>2</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="W10" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >   
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+5#(mm<SUP>2</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W11" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+            
+
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+6#(mm<SUP>2</SUP>): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W12" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >   
+              
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+水眼射流速度(m/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W13" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+
+
+   
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+水眼射流冲击力(N):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="W14" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+比水功率(w/mm<SUP>2</SUP>):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W15" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+井底面积(mm<SUP>2</SUP>): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W16" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+钻井泵工作压力(MPa):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W17" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >           
+  
+  
+   <div class="ui-block-a"  style="width:62%;"  id="q2" >
+泵实发功率(kW): 
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W18" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >              
+ 
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(l/s):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+<input type="text"  name="hyl"    id="W19" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >   
+  <div class="ui-block-a"  style="width:62%;"  id="q2" >
+排量(m<SUP>3</SUP>/min):
+</div> <div class="ui-block-b"  style="width:35%;"   >
+ <input type="text"  name="hyl"    id="W20" style="color:#6699ee"  class="shuchu"   >
+ </div> <hr style="width:100%;" >               
+
+            
+
+   说明：</p>本计算结果仅供参考，请按相关标准执行。          
+        
+  
+
+</form>  
+    
+
+
+	</div>
+
+                                                                    
+
+   	<div data-role="footer" data-position="fixed"   id="glideDiv0">	<div  data-role="navbar" >
+<ul>
+<li><input type="button" value="计算"  name="B4"   onClick="sljs56()"  id="B4" >
+</li>
+					
+</ul>
+	</div>	</div>
+
+
+
+
+</div></body></html>
