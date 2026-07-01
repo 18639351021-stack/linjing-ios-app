@@ -17,7 +17,7 @@ input.shuchu{width:90%; 	margin: 0 auto 0;}11
  .mylist{ width:100%; height:74px; float:left;}    
     .mylist ul{ width:90%;}    
     .myli li{ width:45%; float:left; display:block;}
-#mcover{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);
+#mcover{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);}
 
 .ui-content { border-width: 0; overflow: scroll; overflow-x:scroll; padding: 15px; }
 

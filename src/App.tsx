@@ -1011,6 +1011,132 @@ const utilityAssistantCategory: ZjzsCategory = {
 
 const excludedZjzsGalleryIds = new Set(['Gallery017', 'Gallery018', 'Gallery019', 'Gallery020', 'Gallery021']);
 
+const zjzsCalculatorPolishCss = `
+html, body {
+  min-width: 0 !important;
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  font-family: "Microsoft YaHei", Arial, sans-serif !important;
+}
+.ui-page, .ui-body-c, .ui-overlay-c, .ui-content, div[data-role="content"] {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  text-shadow: none !important;
+}
+div[data-role="content"] {
+  padding: 12px 12px 86px !important;
+  overflow-x: hidden !important;
+}
+h3, h4 {
+  margin: 0 0 10px !important;
+  color: #0f172a !important;
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+}
+h4 { margin-top: 12px !important; }
+form {
+  display: grid !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+form > .ui-block-a,
+form > .ui-block-b {
+  float: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  line-height: 1.25 !important;
+}
+form > .ui-block-a {
+  margin-top: 2px !important;
+  color: #475569 !important;
+  font-size: 12px !important;
+}
+form > .ui-block-b { margin-bottom: 2px !important; }
+form hr, .hr0, .hr1 { display: none !important; }
+input, select, textarea, .ui-input-text input, .ui-select select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 40px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  padding: 9px 10px !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 14px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.14) !important;
+}
+input[type="text"][id], input[type="text"][style*="6699ee"] {
+  border-color: #bbf7d0 !important;
+  background: #ecfdf5 !important;
+  color: #14532d !important;
+  font-weight: 700 !important;
+}
+.ui-input-text, .ui-select, .ui-btn {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+#glideDiv0, div[data-role="footer"] {
+  position: fixed !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 20 !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  min-height: 64px !important;
+  padding: 10px 12px calc(env(safe-area-inset-bottom) + 10px) !important;
+  line-height: normal !important;
+  background: rgba(248, 250, 252, 0.96) !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+#glideDiv0 input[type="button"], div[data-role="footer"] input[type="button"], input[type="button"] {
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+#glideDiv0 ul, #glideDiv0 li, div[data-role="footer"] ul, div[data-role="footer"] li {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+p {
+  margin: 4px 0 !important;
+  color: #475569 !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+table {
+  width: 100% !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+`;
+
+function polishZjzsCalculatorFrame(frame: HTMLIFrameElement) {
+  const doc = frame.contentDocument || frame.contentWindow?.document;
+  if (!doc) return;
+  let style = doc.getElementById('linjing-zjzs-calculator-polish') as HTMLStyleElement | null;
+  if (!style) {
+    style = doc.createElement('style');
+    style.id = 'linjing-zjzs-calculator-polish';
+    doc.head.appendChild(style);
+  }
+  style.textContent = zjzsCalculatorPolishCss;
+}
+
 function AssistantPanel() {
   const [categories, setCategories] = useState<ZjzsCategory[]>([utilityAssistantCategory]);
   const [categoryId, setCategoryId] = useState(utilityAssistantCategory.id);
@@ -1069,7 +1195,7 @@ function AssistantPanel() {
       {tool?.calculatorId ? (
         <SingleCoordinateCalculatorPanel calculatorId={tool.calculatorId} />
       ) : tool?.path ? (
-        <iframe className="assistant-frame" title={tool.title} src={tool.path} />
+        <iframe className="assistant-frame" title={tool.title} src={tool.path} onLoad={event => polishZjzsCalculatorFrame(event.currentTarget)} />
       ) : (
         <div className="empty-state compact">请选择助手工具</div>
       )}
