@@ -1023,6 +1023,10 @@ html, body {
   color: #0f172a !important;
   text-shadow: none !important;
 }
+div[data-role="header"],
+.ui-header {
+  display: none !important;
+}
 div[data-role="content"] {
   padding: 12px 12px 86px !important;
   overflow-x: hidden !important;
